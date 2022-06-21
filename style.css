@@ -53,7 +53,7 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0,0.06);
     position: sticky;
     top: 0;
- 
+ z-index: 999;
 }
 #navbar{
     display: flex;
@@ -253,4 +253,215 @@ font-size: 25px;
 #banner button:hover{
     background-color: #088178;
     color: white ;
+}
+/*  after new arrival section banners and images */
+#newbanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#newbanner .childbanner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+       background-image: url("/img/banner/b17.jpg");
+    min-width:580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#newbanner h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+}
+#newbanner h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#newbanner span{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#newbanner button{
+    height: 40px;
+    width: 30%;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    padding: 6px 5px;
+    outline: none;
+    transform: 0.2s;
+    
+}
+#newbanner .child2{
+    background-image: url("/img/banner/b10.jpg");
+}
+
+#newbanner .childbanner:hover button{
+    background-color: #088178;
+   border: 1px solid #088178;
+}
+#banner3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+}
+#banner3 .childbanner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+       background-image: url("/img/banner/b7.jpg");
+    min-width:30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+#banner3 .bannerbox1{
+    background-image: url("/img/banner/b4.jpg");
+}
+#banner3 .bannerbox2{
+    background-image: url("/img/banner/b18.jpg");
+}
+#banner3 h2{
+    color:#ffffff;
+    font-size: 28px;
+    font-weight: 900;
+    
+}
+#banner3 h3{
+    color: #ef3636;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+#newslatter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("/img/banner/b14.png");
+    background-repeat: no-repeat; 
+     background-position: 20% 30%;
+     background-color: #041e42;
+}
+#newslatter h4{
+   font-size: 25px;
+   font-weight: 600;
+   color: white;
+}
+#newslatter p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #abea7ed0;
+ }
+ #newslatter p span{
+    color: #ffbd27;
+ }
+ #newslatter .form2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 40%;
+ }
+ #newslatter .form2 input{
+    height: 3.125rem;
+    border: 1px solid transparent;
+    padding: 0 1.25rem;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+ }
+
+ #newslatter .form2 button{
+    height: 3.125rem;
+    width: 30%;
+    border: 1px solid transparent;
+    padding: 0 1.25rem;
+    cursor: pointer;
+    background-color: #088178;
+    color: white;
+   
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    padding: 6px 5px;
+    outline: none;
+    transform: 0.2s;
+    white-space: nowrap ;
+
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+footer .logo {
+   
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+footer p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #606063 ;
+}
+
+footer .follow{
+margin-top: 20px;
+}
+footer .follow .icons{
+    color :#465b52;
+    margin: 10px 0px;
+}
+footer .row .ab{
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+footer .row .an{
+    border: 2px solid black;
+    margin-left: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+footer .copyright {
+    width: 100%;
+
+    text-align: center;
+ 
+}
+
+footer .follow .icons i:hover,
+footer  a:hover{
+    color:#088178;
 }
