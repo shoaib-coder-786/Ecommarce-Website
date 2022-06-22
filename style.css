@@ -48,7 +48,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 20px 15px;
     background-color: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0,0.06);
     position: sticky;
@@ -78,7 +78,21 @@ body{
 #navbar li a.active{
 color: #088178;
 }
+#menu{
+    display: none;
+    align-items: center;
+    /* justify-content: end; */
+   cursor: pointer;
+}
+.afterlogo{
+    display: none;
+    position: absolute;
+    right: 50px;
+}
 
+#close{
+    display: none;
+}
 /* Main Home page  */
 #hero{
     background-image: url("./img/hero4.png");
@@ -272,6 +286,7 @@ font-size: 25px;
     background-size: cover;
     background-position: center;
     padding: 30px;
+    margin-bottom: 15px;
 }
 
 #newbanner h4{
@@ -332,7 +347,7 @@ font-size: 25px;
     height: 30vh;
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    /* padding: 20px; */
     margin-bottom: 15px;
 }
 #banner3 .bannerbox1{
@@ -465,3 +480,208 @@ footer .follow .icons i:hover,
 footer  a:hover{
     color:#088178;
 }
+
+/* Media Queries to make responsive apps */
+@media (max-width:700px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+    
+
+
+    #navbar {
+        display: flex;
+        flex-direction : column ;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 200px;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right:-300px;
+        z-index: 11;
+            background-color: #E3E6F3;
+            box-shadow: 0px 40px 60px rgba(0, 0, 0,0.03) ;
+            padding: 80px 0 0 20px;
+             transition: 0.3s;
+    }
+    #navbar .deactive{
+        right : 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    
+    #menu{
+        display: flex;
+        /* align-items: center; */
+        
+    }
+    #menu i{
+    color: #1a1a1a;
+    font-size: 25px;
+    padding-right: -2px;
+    }
+    #close{
+        display: flex;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        color: #222;
+        font-size: 25px;
+    }
+.afterlogo{
+    display: flex;
+}
+#hero {
+
+    height: 90vh;
+    background-position: top 30% right 30%;
+    padding: 0px 80px;
+    
+}
+#features {
+   
+    justify-content: center;
+
+}
+#features .first {
+    margin: 20px 25px;
+    width: 40%;
+    padding: 0 15px;
+}
+
+#product1 .majorProduct {
+
+    justify-content: center;
+
+}
+#product1 .pro {
+    width: 25%;
+    margin: 15px 10px;
+   
+}
+
+#banner {
+   
+    width: 100%;
+    height: 50vh;
+}
+#banner h1 {
+    padding-top: 4px;
+    font-size: 30px;
+    line-height: 50px
+}#banner button {
+    height: 30px;
+    width: 26%;
+  
+}
+#newbanner .childbanner {
+   
+    min-width: 100%;
+    height: 30vh;
+    
+}
+#banner3{
+    padding: 10px 20px;
+}
+#banner3 .childbanner {
+   
+    min-width: 100%;
+    height: 30vh;
+  
+}
+#newslatter .form2  {
+    width: 100%;
+
+}
+footer .col1{
+    margin: 20px 25px;
+}
+}
+
+
+/* @media (max-width:670px) {
+    
+#banner{
+    width: 100%;
+    height: auto;
+}
+#banner button{
+    width: auto;
+    height: auto;
+}
+#newbanner .childbanner{
+    max-width: 80%;
+    height: auto;
+    margin-right: 20px;
+}
+
+#newbanner button{
+    height: auto;
+    width: auto;
+}
+
+} */
+
+
+@media (max-width:600px) {
+    #hero {
+        height: 100vh;
+        background-position: top 30% right 30%;
+        padding: 0px 80px;
+    }
+    .cont {
+        position: absolute;
+        left: 15%;
+        top: 45%;
+        margin: 5px 10px;
+        padding: 1px;
+    }
+    #hero h1 {
+       font-size: 40px;
+    }
+    #hero h2{
+        font-size: 30px;
+        color: #ef3636;
+    }#hero p{
+        color: hsl(302, 24%, 61%);
+        font-weight: 500;
+    }
+
+
+}
+@media (max-width:580px) {
+    .section-p1{
+        margin: 10px 0;
+    }
+    #features {
+        width: 100%;
+        height: 70%;
+    }
+    #features .first{
+       width: 100%;
+       height: 100%;
+    }
+    #product1 .pro {
+        width: 100%;
+        margin: 15px 10px;
+    }
+    #newbanner .childbanner {
+        min-width: 100%;
+       margin: 20px 0px;
+       height: 100%;
+    }
+    #newbanner button {
+        height: 40px;
+        width: 50%;
+    
+    }
+    #banner button {
+        height: 15%;
+        width: 40%;
+       
+    }
+}
+
+
